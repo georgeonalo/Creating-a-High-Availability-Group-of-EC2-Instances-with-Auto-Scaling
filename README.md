@@ -5,7 +5,7 @@ In this project, I will describe how to create a high availability group of EC2 
 
 1. Create an EC2 launch template with a minimum of 2 instances and a maximum of 5.
 
-2.The Autoscaling group should span at least 3 subnets.
+2. The Autoscaling group should span at least 3 subnets.
 
 3. Simulate a failure by terminating 1 instance.
 
