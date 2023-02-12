@@ -22,6 +22,8 @@ Auto-scaling a group of EC2 instances ensures that your applications remain avai
 
 ### Step 1
 
+First login to your AWS account and navigate to the EC2 dashboard. Under Instances click on Launch Templates. From here click the orange Create Launch Template button.
+
 ![image](https://user-images.githubusercontent.com/115881685/218282752-8e8d2b72-2e53-429c-b729-0fe53234a81d.png)
 
 
@@ -30,7 +32,7 @@ From here you will name your template and provide a brief description. I will ch
 
 
 
-![image](https://user-images.githubusercontent.com/115881685/218282792-6e1f6aab-6237-4994-a166-ed77401463d4.png)
+![image](https://user-images.githubusercontent.com/115881685/218319871-83479124-04e6-44c6-8280-dae59d6dc32b.png)
 
 
 
@@ -53,7 +55,7 @@ Then you have the option of creating a key pair or using a key pair you have alr
 
 
 
-![image](https://user-images.githubusercontent.com/115881685/218282911-449140ed-8f0e-48d1-994a-a29b2e32096d.png)
+![image](https://user-images.githubusercontent.com/115881685/218319941-8eee9fb7-f4dd-4232-92a1-3c3a2ebb81e0.png)
 
 
 
@@ -61,7 +63,7 @@ Moving on to Network Settings, you will have the option to create a security gro
 
 
 
-![image](https://user-images.githubusercontent.com/115881685/218282953-37121d39-057d-4a35-af94-bffb547cc9c0.png)
+![image](https://user-images.githubusercontent.com/115881685/218320013-3fb2a231-ff4f-4d57-8f81-645d1d276a80.png)
 
 
 
@@ -71,7 +73,7 @@ We need to create rules for our security group to allow access to the webserver 
 
 
 
-![image](https://user-images.githubusercontent.com/115881685/218282988-296e6a62-f0a8-470d-b9ae-c956260d2c89.png)
+![image](https://user-images.githubusercontent.com/115881685/218320081-b6fd1497-6569-472c-a28a-ac14a755053c.png)
 
 
 
@@ -125,7 +127,7 @@ Name your Auto Scaling Group:
 
 
 
-![image](https://user-images.githubusercontent.com/115881685/218283154-78b9cac0-0c6c-4607-ad4b-6084e4abe182.png)
+![image](https://user-images.githubusercontent.com/115881685/218320181-efd8fa96-3b48-4ec5-924f-6f2b801c0275.png)
 
 
 
@@ -133,11 +135,16 @@ Under Launch Template select the template you just created and click next!
 
 
 
-![image](https://user-images.githubusercontent.com/115881685/218283177-3d8fc753-b391-4d3a-a74d-d2d9cde6c41e.png)
+![image](https://user-images.githubusercontent.com/115881685/218320239-5a31c2e9-7809-4df4-87c2-670272b3a9d6.png)
 
 
 
 The next screen will show the Network. Keep the default vpc. Under Availability and subnets I will select 4 subnets to provide higher availability.
+
+
+
+![image](https://user-images.githubusercontent.com/115881685/218320317-20ab57f1-2e40-402d-96b8-2c942278d1fd.png)
+
 
 
 
@@ -147,7 +154,7 @@ Hit next and hit next again through Configure Advanced Options screen. The scree
 
 
 
-![image](https://user-images.githubusercontent.com/115881685/218283224-32207e0b-3431-4a7b-9d43-713cb1008651.png)
+![image](https://user-images.githubusercontent.com/115881685/218320382-26fd7f2e-6871-4a90-bd46-70566e4fb17e.png)
 
 
 
